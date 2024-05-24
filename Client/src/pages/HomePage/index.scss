@@ -1,0 +1,40 @@
+main{
+    #slider{
+        width: 100%;
+        height: 80vh;
+        color: white;
+        background-color: #f532b7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .big-desc{
+            width: 450px;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .off{
+                display: flex;
+                margin-bottom: 10px;
+            }
+            h1{
+                font-size: 50px;
+                font-weight: bolder;
+            }
+            button{
+                width: 200px;
+                height: 50px;
+                border-radius: 30px;
+                margin-top: 30px;
+                border: none;
+                font-weight: bold;
+            }
+        }
+        @media only screen and (max-width:1190px){
+            #slider{
+                height: auto;
+                flex-direction: column;
+            }
+        }
+    }
+}
