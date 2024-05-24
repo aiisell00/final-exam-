@@ -1,8 +1,14 @@
 import React from 'react'
+import { useState } from 'react';
 import "./index.scss"
 
 
 const HomePage = () => {
+  const [shop, setShop] = useState("")
+  const [shopCopy, setShopCopy] = useState(null)
+  //  const handleBasket (w)=>{
+  //   return
+  //  } ;
   return ( 
     <main>
     <section id='slider'>
@@ -18,6 +24,22 @@ const HomePage = () => {
             <button>PURCHASE NOW</button>
             </div> 
             
+    <section id='grid'>
+      <div className="container">
+        <div className="categories">
+          <div className="categories-desc">
+            <h1>Shop for Different Categories</h1>
+            <p>Who are in extremely love with eco friendly system.</p>
+          </div>
+          <div className="categories-grid">
+            <div class="div1"> <img src="https://preview.colorlib.com/theme/shop/img/c1.jpg" alt="" /> </div>
+            <div class="div2"> <img src="https://preview.colorlib.com/theme/shop/img/c1.jpg" alt="" /> </div>
+            <div class="div3"> <img src="https://preview.colorlib.com/theme/shop/img/c3.jpg" alt="" /> </div>
+            <div class="div4"> <img src="https://preview.colorlib.com/theme/shop/img/c4.jpg" alt="" /> </div>
+          </div>
+        </div>
+      </div>
+    </section>
            
     </section>
     <section id='men'>
